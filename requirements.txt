@@ -1,0 +1,53 @@
+# ──────────────────────────────────────────────────────────────
+#  NutriGuide AI — Python Dependencies
+#  IBM Granite Nutrition Agent
+#  Python 3.10+ required
+#
+#  Install:  pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────
+
+# Web framework
+Flask==3.0.3
+Flask-Cors==4.0.1
+Werkzeug==3.1.9
+
+# IBM watsonx.ai SDK (IBM Granite LLM)
+ibm_watsonx_ai==1.8.0
+ibm-cos-sdk==2.14.3
+ibm-cos-sdk-core==2.14.3
+ibm-cos-sdk-s3transfer==2.14.3
+
+# HTTP & async
+requests==2.34.2
+httpx==0.28.1
+httpcore==1.0.9
+anyio==4.15.1
+h11==0.16.0
+lomond==0.3.4
+
+# Data & utilities
+pandas==2.3.3
+numpy==2.5.4
+tabulate==0.10.0
+python-dateutil==2.9.0.post0
+pytz==2026.5
+tzdata==2026.5
+
+# Core utilities
+python-dotenv==1.0.1
+certifi==2026.7.22
+charset-normalizer==3.5.2
+idna==3.20
+urllib3==2.8.0
+packaging==26.3
+cachetools==7.2.1
+six==1.17.0
+jmespath==1.0.1
+typing_extensions==4.16.0
+
+# Flask internals
+blinker==1.9.0
+click==8.5.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.4

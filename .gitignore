@@ -1,0 +1,81 @@
+# ──────────────────────────────────────────────────────────────
+#  NutriGuide AI — .gitignore
+# ──────────────────────────────────────────────────────────────
+
+# ── Environment & Secrets (NEVER commit credentials) ──────────
+.env
+*.env
+.env.local
+.env.production
+.env.staging
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual Environment ───────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# ── Distribution / Build ──────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ── Testing ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ── IDE & Editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+server.log
+server_err.log
+logs/
+
+# ── Generated nutrition plans (user data — do not commit) ─────
+nutrition_plans/*.md
+!nutrition_plans/sample_nutrition_plan_demo.md
+
+# ── OS generated ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# ── Flask ────────────────────────────────────────────────────
+instance/
+.webassets-cache
+flask_session/
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints
+*.ipynb
